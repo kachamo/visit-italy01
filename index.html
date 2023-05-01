@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Visit Italy</title>
+  </head>
+  <body>
+    <div class="first-page">
+      <nav class="nav_bar">
+        <a href="index.html" class="logo">V.ita</a>
+        <ul class="nav_menu">
+          <li class="nav_list"><a href="/">Home</a></li>
+          <li class="nav_list"><a href="about.html">Service</a></li>
+          <li class="nav_list"><a href="projects.html">Activities</a></li>
+          <li class="nav_list"><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </div>
+      </nav>
+      <div class="main-container">
+        <section class="hero-section">
+          <header class="bold-title">VISIT <br />ITALY</header>
+          <p class="main-p">
+            Welcome to Italy, a land of breathtaking landscapes, delicious food,
+            and inspiring art. Immerse yourself in the culture and history of
+            majestic mountains, azure seas, and charming cities. Come and
+            discover the magic of Italy!
+          </p>
+        </section>
+        <div class="weather-app">
+          <div class="card">
+            <div class="search">
+              <input
+                type="text"
+                placeholder="Enter city name"
+                spellcheck="false"
+              />
+              <button><img src="images/search.png" alt="Search" /></button>
+            </div>
+            <div class="error">
+              <p>Invalid city name</p>
+            </div>
+            <div class="weather">
+              <img
+                src="images/rain.png"
+                alt="Weather Icon"
+                class="weather-icon"
+              />
+              <h1 class="temp"></h1>
+              <h2 class="city"></h2>
+              <div class="details">
+                <div class="col">
+                  <img src="images/humidity.png" alt="Humidity Icon" />
+                  <div>
+                    <p class="humidity"></p>
+                    <p>Humidity</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="images/wind.png" alt="Wind Speed Icon" />
+                  <div>
+                    <p class="wind"></p>
+                    <p>Wind Speed</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-fadeBottom"></div>
+    </div>
+    <div class="second-page">
+        <div class="activity-container">
+            <h1>Activities</h1>
+            <div>
+            <figure class="activity-card">
+                <figure class="activity-img"><img src="images/food.svg" alt="" /></figure>
+                <figcaption class="activity-description">
+                Indulging in delicious Italian cuisine with a view of Rome's Colosseum.
+                </figcaption>
+            </figure>
+            </figure>
+            <figure class="activity-card">
+                <figure class="activity-img"><img src="images/hiking.svg" alt="" /></figure>
+                <figcaption class="activity-description">
+                Conquering the Dolomites' stunning peaks on foot.
+                </figcaption>
+            </figure>
+            </figure>
+            <figure class="activity-card">
+                <figure class="activity-img"><img src="images/camping.svg" alt="" /></figure>
+                <figcaption class="activity-description">
+                Riding Sardinia's waves for a thrilling experience.
+                </figcaption>
+            </figure>
+            </figure>
+            <figure class="activity-card">
+                <figure class="activity-img"><img src="images/surfing.svg" alt="" /></figure>
+                <figcaption class="activity-description">
+                Discovering Florence's gems on two wheels.
+                </figure>
+            </figure>
+            <figure class="activity-card">
+                <figure class="activity-img"><img src="images/bicycle.svg" alt="" /></figure>
+                <figcaption class="activity-description">
+                Discovering Florence's gems on two wheels.
+                </figcaption>
+            </figure>
+            </figure>
+            <figure class="activity-card">
+                <figure class="activity-img"><img src="images/fishing.svg" alt="" /></figure>
+                <figcaption class="activity-description">
+                Relaxing with a line in Lake Garda's waters.
+                </figure>
+            </figure>
+            </div>
+        </div>
+        <section class="booking">
+            <section class="search-container">
+            <div class="main-container">
+                <h1>Find the perfect hotel</h1>
+                <form class="search-form">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                    <label for="destination">Destination</label>
+                    <input type="text" class="form-control" id="destination" placeholder="Where are you going?">
+                    </div>
+                    <div class="form-group col-md-3">
+                    <label for="check-in">Check-In</label>
+                    <input type="date" class="form-control" id="check-in">
+                    </div>
+                    <div class="form-group col-md-3">
+                    <label for="check-out">Check-Out</label>
+                    <input type="date" class="form-control" id="check-out">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                    <label for="rooms">Rooms</label>
+                    <select class="form-control" id="rooms">
+                        <option>1 Room</option>
+                        <option>2 Rooms</option>
+                        <option>3 Rooms</option>
+                        <option>4 Rooms</option>
+                    </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                    <label for="adults">Adults</label>
+                    <select class="form-control" id="adults">
+                        <option>1 Adult</option>
+                        <option>2 Adults</option>
+                        <option>3 Adults</option>
+                        <option>4 Adults</option>
+                    </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                    <label for="children">Children</label>
+                    <select class="form-control" id="children">
+                        <option>No Children</option>
+                        <option>1 Child</option>
+                        <option>2 Children</option>
+                        <option>3 Children</option>
+                    </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                    <label for="child-age">Child Age</label>
+                    <input type="text" class="form-control" id="child-age" placeholder="Age of child">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+            </section>
+            <div class="slider-card">
+                <div class="photo-grid">
+                    <img src="images/photo-grid.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- <div class="banner-fadeTop"></div> -->
+    </div>
+    <div class="third-page">
+        <section class="service-section">
+            <section class="best-services">
+                <h2>Best Services</h2>
+                <div class="services-container">
+                <div class="service">
+                    <img src="images/image-1.jpg" alt="Service Image">
+                    <h3>Service 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ultrices libero. Aliquam erat volutpat.</p>
+                </div>
+                <div class="service">
+                    <img src="images/image-2.jpg" alt="Service Image">
+                    <h3>Service 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ultrices libero. Aliquam erat volutpat.</p>
+                </div>
+                <div class="service">
+                    <img src="images/image-3.jpg" alt="Service Image">
+                    <h3>Service 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ultrices libero. Aliquam erat volutpat.</p>
+                </div>
+                </div>
+            </section>
+            <section class="testimonial">
+                <div class="testimonial-container">
+                <h2 class="testimonial-title">What Our Travel Agents Say</h2>
+                <div class="testimonial-cards">
+                    <div class="testimonial-card">
+                    <img src="images/agent1.jpg" alt="Agent 1" class="testimonial-img">
+                    <h3 class="testimonial-name">Jane Doe</h3>
+                    <p class="testimonial-quote">"Working with this company has been a fantastic experience. The support and resources provided have helped me to better serve my clients and grow my business."</p>
+                    </div>
+                    <div class="testimonial-card">
+                    <img src="images/agent2.jpg" alt="Agent 2" class="testimonial-img">
+                    <h3 class="testimonial-name">John Smith</h3>
+                    <p class="testimonial-quote">"The tools and technology provided by this company have made my job as a travel agent much easier. I am able to find the best deals and plan the perfect trip for my clients."</p>
+                    </div>
+                    <div class="testimonial-card">
+                    <img src="images/agent3.jpg" alt="Agent 3" class="testimonial-img">
+                    <h3 class="testimonial-name">Sarah Johnson</h3>
+                    <p class="testimonial-quote">"I appreciate the personalized support and training provided by this company. They have helped me to stay up-to-date on the latest travel trends and provide the best service to my clients."</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <div class="banner-fadeTop"></div>
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--outline">Submit</button>
+                </form>
+            </div>
+    </div>
+    <footer>©2023</footer>
+    <script>
+      const apiKey = "6545c102c56796f36d1c740e4339177e";
+      const currentDate = Math.round(Date.now() / 1000);
+      const targetDate = currentDate + 7 * 24 * 60 * 60;
+      const apiUrl = `https://api.openweathermap.org/data/2.5/weather?units=metric&dt=${targetDate}&q=rome&appid=${apiKey}`;
+
+      const searchBox = document.querySelector(".search input");
+      const searchBtn = document.querySelector(".search button");
+      const weatherIcon = document.querySelector(".weather-icon");
+
+      async function checkWeather(city) {
+        const response = await fetch(
+          `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apiKey}`
+        );
+        if (response.status == 404) {
+          document.querySelector(".error").style.display = "block";
+          document.querySelector(".weather").style.display = "none";
+        } else {
+          const data = await response.json();
+
+          document.querySelector(".city").innerHTML = data.name;
+          document.querySelector(".temp").innerHTML =
+            Math.round(data.main.temp) + "°C";
+          document.querySelector(".humidity").innerHTML =
+            data.main.humidity + "%";
+          document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
+
+          if (data.weather[0].main == "Clouds") {
+            weatherIcon.src = "images/clouds.png";
+          } else if (data.weather[0].main == "Clear") {
+            weatherIcon.src = "images/clear.png";
+          } else if (date.weather[0].main == "Rain") {
+            weatherIcon.src = "images/rain.png";
+          } else if (data.weather[0].main == "Drizzle") {
+            weatherIcon.src = "images/drizzle.png";
+          } else if (data.weather[0].main == "Mist") {
+            weatherIcon.src = "images/mist.png";
+          }
+
+          document.querySelector(".weather").style.display = "block";
+        }
+      }
+
+      searchBtn.addEventListener("click", () => {
+        checkWeather(searchBox.value);
+      });
+      searchBox.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          checkWeather(searchBox.value);
+        }
+      });
+
+      checkWeather("rome");
+    </script>
+    <script></script>
+    <script>
+      // JavaScript code for the booking section
+const checkIn = document.getElementById("check-in");
+const checkOut = document.getElementById("check-out");
+const searchButton = document.getElementById("search-button");
+
+// Add a click event listener to the search button
+searchButton.addEventListener("click", function() {
+  const checkInDate = new Date(checkIn.value);
+  const checkOutDate = new Date(checkOut.value);
+
+  // Perform some validation on the dates
+  if (isNaN(checkInDate.getTime()) || isNaN(checkOutDate.getTime())) {
+    alert("Please select valid check-in and check-out dates.");
+    return;
+  } else if (checkInDate >= checkOutDate) {
+    alert("The check-out date must be after the check-in date.");
+    return;
+  }
+
+  // Perform the search using the selected dates
+  performSearch(checkInDate, checkOutDate);
+});
+
+// Function to perform the search
+function performSearch(checkInDate, checkOutDate) {
+  // Implement the search logic here...
+  console.log(`Searching for hotels from ${checkInDate.toLocaleDateString()} to ${checkOutDate.toLocaleDateString()}`);
+}
+
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+
+  </body>
+</html>
