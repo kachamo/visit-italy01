@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 html{
-    font-size: 62.5%;
+    font-size: 50%;
 }
 *{
     margin: 0;
@@ -77,13 +77,14 @@ a{
 .burger{
     display: none;
     flex-direction: column;
+    cursor: pointer;
 
 }
 .bar{
     height: 3px;
     width: 30px;
     background-color: #fff;
-    margin: 3px 10px;
+    margin: 3px 5px;
 }
 
 
@@ -92,7 +93,7 @@ a{
 
 
 .first-page{
-    background: url(./images/bg.jpg) no-repeat #030303;
+    background: url(./images/bg2.jpg) no-repeat #030303;
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -172,7 +173,7 @@ a{
     border-radius: 30px;
     flex: 1;
     margin-right: 16px;
-    font-size: 18px;
+    font-size: 1.5rem;
 }
 .search button{
     border: 0;
@@ -229,12 +230,7 @@ a{
     margin-top: 10px;
     display: none;
 }
-.banner-fadeBottom{
-    position: relative;
-    bottom: -520px;
-    height: 300px;
-    background: linear-gradient(0deg, rgba(3,3,3,1) 0%, rgba(3,3,3,0) 100%);
-}
+
 
 
 /*<<<<<SECOND PAGE>>>>> */
@@ -569,15 +565,8 @@ a{
 
 
 
-.banner-fadeTop{
-    position: relative;
-    bottom: -130px;
-    height: 100px;
-    z-index: 1;
-    background: linear-gradient(0deg, rgba(3,3,3,0) 0%, rgba(3,3,3,1) 100%);
-}
   .contact {
-    background: url(./images/bg.jpg) no-repeat #030303;
+    background: url(./images/ft.jpg) no-repeat #030303;
     background-size: cover;
     background-position: center center;
     height: 800px;
@@ -680,3 +669,108 @@ footer{
 
 }
 
+/* Small screens (mobile) */
+@media only screen and (max-width: 600px) {
+  .nav_bar{
+    margin: 0;
+  }
+  .nav_menu{
+    display: none;
+  }
+  .burger{
+    display: block;
+
+  }
+  .burger .bar{
+    display: block;
+  }
+
+  .banner-fadeBottom{
+    position: relative;
+    bottom: -850px;
+    height: 300px;
+    background: linear-gradient(0deg, rgba(3,3,3,1) 0%, rgba(3,3,3,0) 100%);
+}
+.weather-app{
+  display: block;
+  top: 60%;
+  left: 10%;
+  z-index: 100;
+}
+.activity-description{
+  width: 0ch;
+   white-space: nowrap; 
+   overflow: hidden; 
+   text-overflow: ellipsis;
+}
+  .slider-card{
+    display: none;
+  }
+  /* Footer */
+  .footer {
+    clear: both;
+  }
+}
+/* Medium screens (tablet) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .nav_bar{
+    margin: 10px;
+  }
+  .nav_menu{
+    display: none;
+  }
+  .burger{
+    display: block;
+
+  }
+  .burger .bar{
+    display: block;
+  }
+
+  .banner-fadeBottom{
+    position: relative;
+    bottom: -780px;
+    height: 300px;
+    background: linear-gradient(0deg, rgba(3,3,3,1) 0%, rgba(3,3,3,0) 100%);
+}
+.weather-app{
+  display: block;
+  top: 60%;
+  left: 10%;
+  z-index: 100;
+}
+.activity-description{
+  width: 0ch;
+   white-space: nowrap; 
+   overflow: hidden; 
+   text-overflow: ellipsis;
+}
+  .slider-card{
+    display: none;
+  }
+  /* Footer */
+  .footer {
+    clear: both;
+  }
+}
+
+/* Large screens (desktop) */
+@media only screen and (min-width: 901px) {
+  /* Main content */
+  .main {
+    width: 70%;
+    float: left;
+    padding: 20px;
+  }
+  
+  /* Navigation */
+  .nav {
+    width: 30%;
+    float: left;
+  }
+  
+  /* Footer */
+  .footer {
+    clear: both;
+  }
+}
