@@ -135,12 +135,10 @@ a{
 
 
 .weather-app{
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    position: absolute;
-    right: 10%;
-    top: 10%;
+  position: absolute;
+  left: 66%;
+  top: 18%;
+  width: 100%;
 }
 .weather-app .card{
     width: 90%;
